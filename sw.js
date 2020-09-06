@@ -1,38 +1,3 @@
-Skip to content
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@joksimovicp 
-Learn Git and GitHub without any code!
-Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
-
-
-joksimovicp
-/
-mpos
-1
-00
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-mpos/sw.js /
-@joksimovicp
-joksimovicp Update sw.js
-Latest commit 838bc54 3 minutes ago
- History
- 1 contributor
-131 lines (125 sloc)  3.12 KB
- 
 const staticAssets = [
     './',
     'css/style.css',
