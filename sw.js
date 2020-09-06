@@ -44,9 +44,7 @@ this.addEventListener('install', function(event){
   '/img/team.jpg',
   '/img/tradition.png',
   '/img/twit.png',
-  '/offline.html',
   '/css/animate.css',
-  '/css/bootstrap.css.map'
        ])
      })
    )
