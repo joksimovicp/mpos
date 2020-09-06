@@ -1,5 +1,99 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@joksimovicp 
+Learn Git and GitHub without any code!
+Using the Hello World guide, you’ll start a branch, write comments, and open a pull request.
+
+
+joksimovicp
+/
+mpos
+1
+00
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Settings
+mpos/sw.js /
+@joksimovicp
+joksimovicp Update sw.js
+Latest commit 838bc54 3 minutes ago
+ History
+ 1 contributor
+131 lines (125 sloc)  3.12 KB
+ 
 const staticAssets = [
-  './',
+    './',
+    'css/style.css',
+    './index.js',
+    './cars.html',
+    './drivers.html',
+    './index.html',
+    './login.html',
+    './signup.html',
+    './js/bootstrap.bundle.js',
+    './js/bootstrap.bundle.js.map',
+    './js/bootstrap.bundle.min.js',
+    './js/bootstrap.bundle.min.js.map',
+    './js/bootstrap.js',
+    './js/bootstrap.js.map',
+    './js/bootstrap.min.js',
+    './js/bootstrap.min.js.map',
+    './js/indexScripts.js',
+    './js/jquery-3.2.1.js',
+    './img/antp.jpg',
+    './img/brazil.jpg',
+    './img/brazil1.jpg',
+    './img/brazil2.jpg',
+    './img/carsback.jpg',
+    './img/enzo.jpg',
+    './img/f1.png',
+    './img/favicon.ico',
+    './img/favicon1.ico',
+    './img/formback.jpg',
+    './img/inst.png',
+    './img/italia.jpg',
+    './img/kimi.jpg',
+    './img/logo.png',
+    './img/maurizio.jpg',
+    './img/mexico1.jpg',
+    './img/mexico2.jpg',
+    './img/mexico3.jpg',
+    './img/seb.jpg',
+    './img/sebp.jpg',
+    './img/sf15t1.jpg',
+    './img/sf15t2.jpg',
+    './img/sf16h1.jpg',
+    './img/sf16h2.jpg',
+    './img/sf70h1.jpg',
+    './img/sf70h2.jpg',
+    './img/sf2007.jpg',
+    './img/sfbanner.jpg',
+    './img/sumi.jpg',
+    './img/team.jpg',
+    './img/tradition.png',
+    './img/twit.png',
+
+
+
+
+]
+this.addEventListener('install', function(event){
+  event.waitUntil(
+     caches.open('static-assets').then(cache => {
+       return cache.addAll([
+          './',
     'css/style.css',
     './index.js',
     './cars.html',
@@ -49,11 +143,7 @@ const staticAssets = [
     './img/team.jpg',
     './img/tradition.png',
     './img/twit.png'
-]
-this.addEventListener('install', function(event){
-  event.waitUntil(
-     caches.open('static-assets').then(cache => {
-       return cache.addAll(staticAssets)
+       ])
      })
    )
 })
